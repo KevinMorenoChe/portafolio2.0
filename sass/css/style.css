@@ -269,6 +269,7 @@
 }
 
 .skillsection {
+  background-color: #eeeeee;
   width: 100%;
   height: 60vh;
   display: flex;
@@ -296,7 +297,7 @@
 .skillsection .skill {
   background-color: #fff;
   margin: 20px;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   padding: 20px;
   box-shadow: inset 0px 0px 20px #000;
   border-radius: 10px;
@@ -313,7 +314,7 @@
 }
 
 .contact {
-  background-color: rgba(148, 148, 148, 0.2);
+  background-color: #eeeeee;
   padding: 100px 15px;
 }
 .contact__h3 {
