@@ -10,12 +10,10 @@
     background-position: center center
     background-attachment: fixed
     background-size: cover
-    z-index: 100
+    z-index: -1
     .images
         width: 40%
         height: 100vh
-        // background: #0011ff34
-
         &__box
             position: relative
             display: flex
@@ -35,6 +33,7 @@
             background-repeat: no-repeat
             animation: animationimg 10s infinite
 
+
     .titles
         width: 60%
         height: 100vh
@@ -45,6 +44,7 @@
         // align-items: center
         flex-direction: column
         padding-left: 5%
+        z-index: 1
         &__h1
             transition: 1s
             &:hover
