@@ -1,10 +1,12 @@
+@use 'color'
+    
 .footer
     display: flex
     justify-content: space-around
     align-items: center 
     width: 100%
-    background-color: #1f1f1f
-    color: #fff
+    background-color: color.$btnbg
+    color: color.$text
     &__section1, &__section2, &__section3
         display: flex
         justify-content: center
@@ -18,7 +20,7 @@
             margin: 0
         a
             text-decoration: none
-            color: #fff
+            color: color.$text
     &__section2
         p
             text-transform: uppercase
@@ -30,10 +32,9 @@
         flex-direction: row
         justify-content: space-between
         align-items: center
-        &__logo
         &__link
             margin: 30px
-            color: #fff
+            color: color.$text
             i
                 font-size: 50px
             

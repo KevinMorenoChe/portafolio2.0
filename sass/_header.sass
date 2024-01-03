@@ -1,3 +1,5 @@
+@use 'color'
+
 .header
     overflow: hidden
     height: 100vh
@@ -5,7 +7,7 @@
     justify-content: space-between
     align-items: center
     .front
-    background-color: #111111
+    background-color: color.$black
     background-image: url("../img/background.jpg") 
     background-position: center center
     background-attachment: fixed
@@ -37,37 +39,43 @@
     .titles
         width: 60%
         height: 100vh
-        // background: #ff000034
-        color: #fff
+        color: color.$text
         display: flex
         justify-content: center
-        // align-items: center
         flex-direction: column
         padding-left: 5%
         z-index: 1
         &__h1
             transition: 1s
-            &:hover
-                transition: 0.5s
-                color: #f0b800
-                text-shadow: 0px 0px 7px #ffbb00
+            animation: multicolors 5s infinite
         &__h2
             font-size: 64px
-            text-shadow: 0px 0px 7px #ffffff
+            text-shadow: 0px 0px 7px color.$white
             margin: 0
             text-transform: uppercase
             position: relative
             align-items: center
-            color: #fff
+            color: color.$white
         &__span
             
+@keyframes multicolors
+    0%
+        color: color.$text
+    50%
+        color: color.$important
+        text-shadow: 0px 0px 4px color.$important
+    100%
+        color: color.$text
+        
 
 @keyframes animationimg
-    0%
+    20%
         background-image: url("../img/img4.png")  
-    25%
-        background-image: url("../img/img6.png")
-    50%
-        background-image: url("../img/img5.png")
-    100%
+    21%
+        background-image: url("../img/img401.png")
+    22%,87%
+        background-image: url("../img/img404.png")
+    88%
+        background-image: url("../img/img401.png")
+    89%
         background-image: url("../img/img4.png")

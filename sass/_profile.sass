@@ -1,3 +1,5 @@
+@use 'color'
+
 .outline
     width: 100%
 
@@ -12,11 +14,11 @@
     background-size: cover 
 
 .boxprofile
-    color: #fff
+    color: color.$text
     border-radius: 10px
     padding: 30px
-    background-color: rgba(0, 0, 0, 0.534)
-    backdrop-filter: blur(4px)
+    background-color: color.$traslucit
+    backdrop-filter: blur(8px)
     width: 1000px
     height: 300px
 
@@ -41,10 +43,11 @@
         text-transform: uppercase
     &__link
         text-decoration: none
-        color: #fff
-        background-color: #555555
+        color: color.$btntext
+        background-color: color.$btnbg
         padding: 10px
-        box-shadow: 0px 0px 5px #000000
         border-radius: 5px
+        transition: 0.5s
         &:hover
-            text-shadow: 0px 0px 4px #fff
+            color: color.$white
+            text-shadow: 0px 0px 4px color.$white
