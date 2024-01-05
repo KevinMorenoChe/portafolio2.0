@@ -67,7 +67,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/img4.png");
+  background-image: url("../img/img4.webp");
   background-position: center center;
   background-attachment: local;
   background-size: contain;
@@ -110,20 +110,20 @@
   }
 }
 @keyframes animationimg {
-  20% {
-    background-image: url("../img/img4.png");
+  30% {
+    background-image: url("../img/img4.webp");
   }
-  21% {
-    background-image: url("../img/img401.png");
+  31% {
+    background-image: url("../img/img401.webp");
   }
-  22%, 87% {
-    background-image: url("../img/img404.png");
+  32%, 97% {
+    background-image: url("../img/img404.webp");
   }
-  88% {
-    background-image: url("../img/img401.png");
+  98% {
+    background-image: url("../img/img401.webp");
   }
-  89% {
-    background-image: url("../img/img4.png");
+  99% {
+    background-image: url("../img/img4.webp");
   }
 }
 .main {
@@ -213,14 +213,16 @@
   object-fit: cover;
 }
 .carditem__link {
-  background-color: #353535;
-  color: #ffffff;
+  background-color: #181818;
+  color: #aaaaaa;
   text-decoration: none;
   padding: 10px;
+  border-radius: 5px;
 }
 .carditem__link:hover {
-  text-shadow: 0px 0px 1px #ffffff;
-  background-color: #4d4d4d;
+  color: #ffffff;
+  text-shadow: 0px 0px 7px #ffffff;
+  box-shadow: 0px 0px 5px #ffffff;
 }
 
 .outline {
